@@ -287,5 +287,12 @@
 
     <script src="static/js/app.js"></script>
     
+<script>
+if (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) {
+    document.querySelectorAll('a[href^="https://agri-intelli-system-production.up.railway.app"]').forEach(function (a) {
+        a.href = "http://127.0.0.1:8000" + a.getAttribute("href").slice(53);
+    });
+}
+</script>
 </body>
 </html>

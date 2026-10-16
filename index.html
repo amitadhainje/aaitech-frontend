@@ -1,192 +1,291 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AAI Tech — Empowering Agriculture Through AI</title>
-  <meta name="description" content="AAI Tech brings agriculture and technology together to build practical, farmer-focused AI solutions. Makers of GreenLens.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 26C6 13 15 6 27 5c0 13-8 21-21 21z' fill='%235B7E3C'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering Agriculture Through AI | AAI Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css?v=2">
+    
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="AAI Tech home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26C6 13 15 6 27 5c0 13-8 21-21 21z" fill="currentColor" style="color:var(--brand)"/><path d="M6 26C11 19 16 14 22 10" stroke="var(--bg)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-      AAI Tech
-    </a>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="greenlens.html">GreenLens</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
+    <!-- ── Navigation ── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-logo">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="8" fill="#86AB5E"/>
+                        <path d="M7 21C7 12 13 7 21 6.5c0 9-5.5 14.5-14 14.5z" fill="white"/>
+                        <path d="M7 21c3.5-4.5 7-7.5 10.5-10" stroke="#86AB5E" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="brand-name">AAI Tech</span>
+            </a>
 
-<main id="top">
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="index.html" class="nav-link active">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="greenlens.html" class="nav-link ">
+                        GreenLens
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#team" class="nav-link">
+                        Team
+                    </a>
+                </li>
+                <li>
+                    <a href="https://agri-intelli-system-production.up.railway.app/detect" class="nav-link ">
+                        Detect Crops
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://agri-intelli-system-production.up.railway.app/register" class="nav-link ">
+                        Register
+                    </a>
+                </li>
+                <li>
+                    <a href="https://agri-intelli-system-production.up.railway.app/login" class="btn btn-primary btn-sm nav-login ">
+                        Login
+                    </a>
+                </li>
+                
+            </ul>
 
-  <section class="hero">
-    <div class="wrap">
-      <div class="eyebrow">AI for agriculture</div>
-      <h1>Empowering agriculture through <em>AI and technology</em></h1>
-      <p class="lead">At AAI Tech, we bring agriculture and technology together to create smarter, more sustainable and more effective ways of farming — so farmers can make better decisions, every season.</p>
-      <div class="btns">
-        <a class="btn primary" href="#greenlens">Explore GreenLens</a>
-        <a class="btn ghost" href="#team">Meet the team</a>
-      </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ── Page content ── -->
+    <main>
+        
+
+<!-- ── Hero ── -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            AI for Agriculture
+        </div>
+        <h1 class="hero-title">
+            Empowering Agriculture<br>
+            <span class="hero-highlight">Through AI &amp; Technology</span>
+        </h1>
+        <p class="hero-sub">
+            At AAI Tech, we bring agriculture and technology together to create smarter,
+            more sustainable and more effective ways of farming.
+        </p>
+        <div class="hero-actions">
+            <a href="greenlens.html" class="btn btn-accent btn-lg">Explore GreenLens</a>
+            <a href="#team" class="btn btn-outline-light btn-lg">Meet the Team</a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section id="about">
-    <div class="wrap about">
-      <div>
-        <div class="eyebrow">Our vision</div>
-        <h2>Technology that helps farmers farm better</h2>
-        <p>We believe technology can play a meaningful role in how farming decisions are made. Through AI-driven solutions, we aim to give farmers clear, timely insight into the conditions that shape their crops and productivity.</p>
-        <p>We are committed to building practical, intelligent and farmer-focused products — tools that help improve farming practices, increase efficiency and adapt to changing agricultural conditions.</p>
-        <p class="belief">When we bring the power of technology closer to the farmer, we help create a better future for agriculture.</p>
-      </div>
-      <div class="focus">
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 1 0 6 16.5"/><path d="M6 19h11.5"/></svg></div>
-          <h3>Climate &amp; weather</h3>
-          <p>Insight into climatic conditions and weather patterns that affect the crop cycle.</p>
+<!-- ── About / Vision ── -->
+<section class="section section-light" id="about">
+    <div class="container about-grid">
+        <div>
+            <span class="section-tag">Our Vision</span>
+            <h2 class="section-title">Technology that helps farmers farm better</h2>
+            <p class="about-text">We believe technology can play a meaningful role in helping farmers make better decisions. Through AI-driven solutions, we aim to give farmers valuable insight into climatic conditions, soil health, weather patterns and the other factors that directly impact their crops and productivity.</p>
+            <p class="about-text">We are committed to building practical, intelligent and farmer-focused products that help improve farming practices, increase efficiency and adapt to changing agricultural conditions.</p>
+            <blockquote class="about-belief">When we bring the power of technology closer to the farmer, we can help create a better future for agriculture.</blockquote>
         </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M5 16h14"/><path d="M12 16V8"/><path d="M12 8c0-3 2-5 5-5 0 3-2 5-5 5z"/><path d="M12 10c0-2-1.5-4-4-4 0 2.5 1.5 4 4 4z"/></svg></div>
-          <h3>Soil health</h3>
-          <p>Understanding soil conditions to support healthier, more productive land.</p>
+        <div class="focus-grid">
+            <div class="focus-card">
+                <div class="step-icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 1 0 6 16.5"/><path d="M6 19h11.5"/></svg></div>
+                <h3>Climate &amp; Weather</h3>
+                <p>Insight into climatic conditions and weather patterns across the crop cycle.</p>
+            </div>
+            <div class="focus-card">
+                <div class="step-icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M5 16h14"/><path d="M12 16V8"/><path d="M12 8c0-3 2-5 5-5 0 3-2 5-5 5z"/><path d="M12 10c0-2-1.5-4-4-4 0 2.5 1.5 4 4 4z"/></svg></div>
+                <h3>Soil Health</h3>
+                <p>Understanding soil conditions for healthier, more productive land.</p>
+            </div>
+            <div class="focus-card">
+                <div class="step-icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/></svg></div>
+                <h3>Crop Intelligence</h3>
+                <p>Computer vision that recognises crops directly from field photos.</p>
+            </div>
+            <div class="focus-card">
+                <div class="step-icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+                <h3>Informed Decisions</h3>
+                <p>Turning data into practical guidance farmers can act on.</p>
+            </div>
         </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/></svg></div>
-          <h3>Crop intelligence</h3>
-          <p>Computer vision that recognises crops directly from field photos.</p>
-        </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
-          <h3>Informed decisions</h3>
-          <p>Turning data into practical guidance farmers can act on.</p>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <section id="greenlens" class="project-bg">
-    <div class="wrap project">
-      <div>
-        <div class="eyebrow">Our first product</div>
-        <h2>GreenLens</h2>
-        <p>GreenLens is an AI-powered crop recognition system. Upload a photo from the field and our custom-trained computer vision model identifies the crops in it — showing what was found, how many, and how confident the model is.</p>
-        <p style="margin-bottom:0">Currently trained to recognise:</p>
-        <div class="crops">
-          <span class="chip">Rice</span><span class="chip">Wheat</span><span class="chip">Maize</span><span class="chip">Sugarcane</span><span class="chip">Jute</span>
+<!-- ── GreenLens product ── -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="section-header light">
+            <span class="section-tag accent">Our Product</span>
+            <h2 class="section-title">GreenLens</h2>
+            <p class="section-sub light">Our AI-powered crop detection app for mobile and web. Take a photo in the field and GreenLens identifies the crops in it, with counts and confidence for each.</p>
         </div>
-        <ol class="steps">
-          <li><b>1</b><span>Capture or upload a crop image from your phone or browser.</span></li>
-          <li><b>2</b><span>Our YOLO-based deep learning model analyses the image in seconds.</span></li>
-          <li><b>3</b><span>See labelled results with counts and confidence, saved to your history.</span></li>
-        </ol>
-        <div class="btns"><a class="btn primary" href="greenlens.html">Learn more about GreenLens</a></div>
-      </div>
-      <div class="platforms">
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
-          <div><h3>Mobile app</h3><p>Android and iOS app for use right in the field.</p></div>
+        <div class="features-grid">
+            <div class="feature-card dark">
+                <div class="feature-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+                <h3>Mobile App</h3>
+                <p>Android and iOS app built for use right in the field, straight from the phone camera.</p>
+            </div>
+            <div class="feature-card dark">
+                <div class="feature-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/></svg></div>
+                <h3>Crop Detection</h3>
+                <p>Recognises rice, wheat, maize, sugarcane and jute using our custom-trained model.</p>
+            </div>
+            <div class="feature-card dark">
+                <div class="feature-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg></div>
+                <h3>Web Platform</h3>
+                <p>Run detections and review your history from any browser, synced with the app.</p>
+            </div>
         </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg></div>
-          <div><h3>Web platform</h3><p>Run detections and review your image history from any browser.</p></div>
+        <div class="center-actions">
+            <a href="greenlens.html" class="btn btn-accent btn-lg">Learn More About GreenLens</a>
+            
+            <a href="https://agri-intelli-system-production.up.railway.app/register" class="btn btn-outline-light btn-lg">Create Free Account</a>
+            
         </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg></div>
-          <div><h3>Secure cloud</h3><p>Accounts and results stored securely in the cloud, synced across devices.</p></div>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <section id="team">
-    <div class="wrap">
-      <div class="center">
-        <div class="eyebrow">Our team</div>
-        <h2>The people behind AAI Tech</h2>
-        <p>Three founders bringing together software engineering, data science, artificial intelligence and emerging technologies.</p>
-      </div>
-      <div class="team">
+<!-- ── Team ── -->
+<section class="section" id="team">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Our Team</span>
+            <h2 class="section-title">The People Behind AAI Tech</h2>
+            <p class="section-sub">Three founders bringing together software engineering, data science, artificial intelligence and hands-on engineering.</p>
+        </div>
+        <div class="team-list">
 
-        <article class="card member">
-          <!-- To use a photo: replace this div with <img class="avatar" src="images/somanath.jpg" alt="Somanath Nanda"> -->
-          <div class="avatar" aria-hidden="true">SN</div>
-          <div class="member-body">
-          <h3>Somanath Nanda</h3>
-          <div class="role">CEO &amp; Co-Founder</div>
-          <p>A software engineer and data specialist with strong foundations in Java, big data and Hadoop, Somanath builds scalable data pipelines and data-driven applications, and applies AI techniques such as NLP, neural networks, predictive analytics and sentiment analysis to turn complex data into actionable insight. He also brings deep expertise in blockchain, including smart contracts, dApps, tokenization and Chainlink.</p>
-          <div class="tags"><span>Java</span><span>Big Data &amp; Hadoop</span><span>Data Science</span><span>NLP</span><span>Predictive Analytics</span><span>Blockchain</span></div>
-          <a class="linkedin" href="https://www.linkedin.com/in/baba-somanath/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg>
-            LinkedIn
-          </a>
-          </div>
-        </article>
+            <article class="member-card">
+                <!-- To use a photo: replace this div with <img class="member-avatar" src="static/images/somanath.jpg" alt="Somanath Nanda"> -->
+                <div class="member-avatar" aria-hidden="true">SN</div>
+                <div class="member-body">
+                    <h3>Somanath Nanda</h3>
+                    <div class="member-role">CEO &amp; Co-Founder</div>
+                    <p>A software engineer and data specialist with strong foundations in Java, big data and Hadoop, Somanath builds scalable data pipelines and data-driven applications, and applies AI techniques such as NLP, neural networks, predictive analytics and sentiment analysis to turn complex data into actionable insight. He also brings deep expertise in blockchain, including smart contracts, dApps, tokenization and Chainlink.</p>
+                    <div class="member-tags"><span>Java</span><span>Big Data &amp; Hadoop</span><span>Data Science</span><span>NLP</span><span>Predictive Analytics</span><span>Blockchain</span></div>
+                    <a class="member-linkedin" href="https://www.linkedin.com/in/baba-somanath/" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </article>
 
-        <article class="card member">
-          <!-- To use a photo: replace this div with <img class="avatar" src="images/sumit.jpg" alt="Sumit Kumar Swain"> -->
-          <div class="avatar" aria-hidden="true">SS</div>
-          <div class="member-body">
-          <h3>Sumit Kumar Swain</h3>
-          <div class="role">CEO &amp; Co-Founder</div>
-          <p>An engineer and innovator with hands-on experience in robotics, embedded systems and aeromodelling, Sumit specialises in turning engineering concepts into working solutions through experimentation, prototyping and practical problem-solving. He brings a strong drive for exploring emerging technologies, building creative hardware-driven projects and fostering collaboration and technical learning within engineering communities.</p>
-          <div class="tags"><span>Robotics</span><span>Embedded Systems</span><span>Aeromodelling</span><span>Prototyping</span><span>Hardware Innovation</span></div>
-          <a class="linkedin" href="https://www.linkedin.com/in/sumit-kumar-swain-a4135918/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg>
-            LinkedIn
-          </a>
-          </div>
-        </article>
+            <article class="member-card">
+                <!-- To use a photo: replace this div with <img class="member-avatar" src="static/images/sumit.jpg" alt="Sumit Kumar Swain"> -->
+                <div class="member-avatar" aria-hidden="true">SS</div>
+                <div class="member-body">
+                    <h3>Sumit Kumar Swain</h3>
+                    <div class="member-role">CEO &amp; Co-Founder</div>
+                    <p>An engineer and innovator with hands-on experience in robotics, embedded systems and aeromodelling, Sumit specialises in turning engineering concepts into working solutions through experimentation, prototyping and practical problem-solving. He brings a strong drive for exploring emerging technologies, building creative hardware-driven projects and fostering collaboration and technical learning within engineering communities.</p>
+                    <div class="member-tags"><span>Robotics</span><span>Embedded Systems</span><span>Aeromodelling</span><span>Prototyping</span><span>Hardware Innovation</span></div>
+                    <a class="member-linkedin" href="https://www.linkedin.com/in/sumit-kumar-swain-a4135918/" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </article>
 
-        <article class="card member">
-          <!-- To use a photo: replace this div with <img class="avatar" src="images/amita.jpg" alt="Amita Ashok Dhainje"> -->
-          <div class="avatar" aria-hidden="true">AD</div>
-          <div class="member-body">
-          <h3>Amita Ashok Dhainje</h3>
-          <div class="role">CEO &amp; Co-Founder</div>
-          <p>An AI and machine learning specialist, Amita works across the full ML lifecycle, from data preparation and feature engineering to model development and optimisation. Her expertise covers NLP and deep learning with transformer models such as BERT, as well as computer vision and generative AI, including large language models and prompt and context engineering, used to build practical AI-powered products.</p>
-          <div class="tags"><span>Machine Learning</span><span>Deep Learning</span><span>NLP &amp; BERT</span><span>Computer Vision</span><span>Generative AI</span><span>LLMs</span></div>
-          <a class="linkedin" href="https://www.linkedin.com/in/amita-dhainje-7a09a915/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg>
-            LinkedIn
-          </a>
-          </div>
-        </article>
+            <article class="member-card">
+                <!-- To use a photo: replace this div with <img class="member-avatar" src="static/images/amita.jpg" alt="Amita Ashok Dhainje"> -->
+                <div class="member-avatar" aria-hidden="true">AD</div>
+                <div class="member-body">
+                    <h3>Amita Ashok Dhainje</h3>
+                    <div class="member-role">CEO &amp; Co-Founder</div>
+                    <p>An AI and machine learning specialist, Amita works across the full ML lifecycle, from data preparation and feature engineering to model development and optimisation. Her expertise covers NLP and deep learning with transformer models such as BERT, as well as computer vision and generative AI, including large language models and prompt and context engineering, used to build practical AI-powered products.</p>
+                    <div class="member-tags"><span>Machine Learning</span><span>Deep Learning</span><span>NLP &amp; BERT</span><span>Computer Vision</span><span>Generative AI</span><span>LLMs</span></div>
+                    <a class="member-linkedin" href="https://www.linkedin.com/in/amita-dhainje-7a09a915/" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </article>
 
-      </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section id="contact">
-    <div class="wrap">
-      <div class="contact">
-        <h2>Let's grow together</h2>
-        <p>Whether you're a farmer, researcher or partner interested in AI for agriculture, we'd love to hear from you.</p>
-        <!-- TODO: replace with your real contact email -->
-        <a class="btn" href="mailto:info@aaitech.in">info@aaitech.in</a>
-      </div>
+<!-- ── Contact ── -->
+<section class="section section-light cta-section" id="contact">
+    <div class="container cta-container">
+        <div class="cta-content">
+            <h2>Let's Grow Together</h2>
+            <p>Farmer, researcher or partner interested in AI for agriculture? We'd love to hear from you.</p>
+        </div>
+        <div class="cta-actions">
+            <!-- TODO: replace with your real contact email -->
+            <a href="mailto:info@aaitech.in" class="btn btn-primary btn-lg">info@aaitech.in</a>
+        </div>
     </div>
-  </section>
+</section>
 
-</main>
 
-<footer>
-  <div class="wrap">
-    <span>© 2026 AAI Tech. All rights reserved.</span>
-    <span>aaitech.in</span>
-  </div>
-</footer>
+    </main>
 
+    <!-- ── Footer ── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="brand-logo small">
+                            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="8" fill="#86AB5E"/>
+                        <path d="M7 21C7 12 13 7 21 6.5c0 9-5.5 14.5-14 14.5z" fill="white"/>
+                        <path d="M7 21c3.5-4.5 7-7.5 10.5-10" stroke="#86AB5E" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    </svg>
+                        </div>
+                        <span>AAI Tech</span>
+                    </div>
+                    <p class="footer-tagline">Empowering agriculture through AI and technology.<br>Makers of GreenLens for web &amp; mobile.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="greenlens.html">GreenLens</a></li>
+                        <li><a href="https://agri-intelli-system-production.up.railway.app/detect">Detect Crops</a></li>
+                        
+                        <li><a href="https://agri-intelli-system-production.up.railway.app/register">Register</a></li>
+                        <li><a href="https://agri-intelli-system-production.up.railway.app/login">Login</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-tech">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AAI Tech. All rights reserved. GreenLens is a product of AAI Tech.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/app.js"></script>
+    
 </body>
 </html>

@@ -1,158 +1,272 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GreenLens — AI Crop Recognition | AAI Tech</title>
-  <meta name="description" content="GreenLens by AAI Tech: AI-powered crop recognition from field photos, on mobile and web.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 26C6 13 15 6 27 5c0 13-8 21-21 21z' fill='%235B7E3C'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLens — AI Crop Detection | AAI Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css?v=2">
+    
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="index.html" aria-label="AAI Tech home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26C6 13 15 6 27 5c0 13-8 21-21 21z" fill="currentColor" style="color:var(--brand)"/><path d="M6 26C11 19 16 14 22 10" stroke="var(--bg)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-      AAI Tech
-    </a>
-    <ul>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="greenlens.html" aria-current="page">GreenLens</a></li>
-      <li><a href="index.html#team">Team</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
+    <!-- ── Navigation ── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-logo">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="8" fill="#86AB5E"/>
+                        <path d="M7 21C7 12 13 7 21 6.5c0 9-5.5 14.5-14 14.5z" fill="white"/>
+                        <path d="M7 21c3.5-4.5 7-7.5 10.5-10" stroke="#86AB5E" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="brand-name">AAI Tech</span>
+            </a>
 
-<main>
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="index.html" class="nav-link ">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="greenlens.html" class="nav-link active">
+                        GreenLens
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#team" class="nav-link">
+                        Team
+                    </a>
+                </li>
+                <li>
+                    <a href="https://agri-intelli-system-production.up.railway.app/detect" class="nav-link ">
+                        Detect Crops
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://agri-intelli-system-production.up.railway.app/register" class="nav-link ">
+                        Register
+                    </a>
+                </li>
+                <li>
+                    <a href="https://agri-intelli-system-production.up.railway.app/login" class="btn btn-primary btn-sm nav-login ">
+                        Login
+                    </a>
+                </li>
+                
+            </ul>
 
-  <section class="hero">
-    <div class="wrap">
-      <div class="eyebrow">A product by AAI Tech</div>
-      <h1>GreenLens: <em>see your crops</em> through AI</h1>
-      <p class="lead">GreenLens is an AI-powered crop recognition system. Take a photo in the field, and our custom-trained computer vision model tells you which crops it sees, how many, and how confident it is.</p>
-      <div class="btns">
-        <a class="btn primary" href="https://agri-intelli-system-production.up.railway.app">Try GreenLens</a>
-        <a class="btn ghost" href="#how">How it works</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="how">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">How it works</div>
-        <h2>From field photo to insight in seconds</h2>
-      </div>
-      <div class="flow">
-        <div class="card"><h3>Sign in</h3><p>Create a free account on the mobile app or website. One account works on both.</p></div>
-        <div class="card"><h3>Upload a photo</h3><p>Take a picture with your phone camera or upload an image from your gallery or computer.</p></div>
-        <div class="card"><h3>AI detection</h3><p>Our YOLO-based deep learning model finds and labels each crop in the image.</p></div>
-        <div class="card"><h3>Review results</h3><p>See the labelled image with the count and confidence for each crop, saved to your history.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-bg">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Supported crops</div>
-        <h2>Trained on India's key field crops</h2>
-        <p>GreenLens currently recognises five major crops, and we will keep adding more.</p>
-      </div>
-      <div class="crop-grid">
-        <div class="card"><span aria-hidden="true">🌾</span><b>Rice</b></div>
-        <div class="card"><span aria-hidden="true">🌾</span><b>Wheat</b></div>
-        <div class="card"><span aria-hidden="true">🌽</span><b>Maize</b></div>
-        <div class="card"><span aria-hidden="true">🎋</span><b>Sugarcane</b></div>
-        <div class="card"><span aria-hidden="true">🌿</span><b>Jute</b></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Features</div>
-        <h2>Built for the field and the office</h2>
-      </div>
-      <div class="features">
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/></svg></div>
-          <h3>Smart detection</h3>
-          <p>Each crop found in the image is outlined and labelled by a custom-trained model.</p>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
-          <h3>Counts &amp; confidence</h3>
-          <p>A clear summary of each crop detected, with how many were found and the model's confidence.</p>
+    </nav>
+
+    <!-- ── Page content ── -->
+    <main>
+        
+
+<!-- ── Page hero ── -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-tag accent">A Product by AAI Tech</span>
+        <h1 class="page-title">GreenLens</h1>
+        <p class="page-sub">AI-powered crop detection for mobile and web. Take a photo in the field and our custom-trained model tells you which crops it sees, how many, and how confident it is.</p>
+        <div class="hero-actions page-hero-actions">
+            
+            <a href="https://agri-intelli-system-production.up.railway.app/register" class="btn btn-accent btn-lg">Create Free Account</a>
+            <a href="https://agri-intelli-system-production.up.railway.app/login" class="btn btn-outline-light btn-lg">Login to Detect</a>
+            
         </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-          <h3>Detection history</h3>
-          <p>Every scan is saved with its original and annotated image, so you can look back anytime.</p>
-        </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
-          <h3>Mobile app</h3>
-          <p>Android and iOS app made for use in the field, straight from your phone camera.</p>
-        </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg></div>
-          <h3>Web platform</h3>
-          <p>Run detections and manage your history from any browser.</p>
-        </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg></div>
-          <h3>Synced &amp; secure</h3>
-          <p>Your account and results are stored in the cloud and stay in sync across mobile and web.</p>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <section class="project-bg">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Under the hood</div>
-        <h2>The technology</h2>
-      </div>
-      <div class="stack">
-        <div class="card"><h3>AI model</h3><p>YOLO (Ultralytics)</p><small>Custom-trained on crop image datasets</small></div>
-        <div class="card"><h3>Backend</h3><p>Python &amp; FastAPI</p><small>Runs inference on the server</small></div>
-        <div class="card"><h3>Mobile</h3><p>Flutter</p><small>One codebase for Android and iOS</small></div>
-        <div class="card"><h3>Cloud</h3><p>Google Firebase</p><small>Firestore database for accounts and history</small></div>
-      </div>
+<!-- ── How it works ── -->
+<section class="section section-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">How It Works</span>
+            <h2 class="section-title">From Field Photo to Insight</h2>
+            <p class="section-sub">No setup, no expertise required. Just upload and see.</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <div class="step-icon">
+                    <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                </div>
+                <h3>Upload a Photo</h3>
+                <p>Take a picture with your phone or upload one from your gallery or computer.</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <div class="step-icon">
+                    <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3>AI Detection</h3>
+                <p>Our YOLO-based deep learning model finds and labels each crop in the image.</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <div class="step-icon">
+                    <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <h3>Review Results</h3>
+                <p>See the annotated image with counts and confidence per crop, saved to your history.</p>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section>
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Where we're heading</div>
-        <h2>The start of a smarter farming toolkit</h2>
-        <p>GreenLens is our first step. In line with the AAI Tech vision, we plan to grow it into a broader assistant for farmers, with more crops and insights on climate, soil health and weather patterns, so farmers can make better decisions all season long.</p>
-      </div>
-      <div class="contact">
-        <h2>Ready to try GreenLens?</h2>
-        <p>Create an account and run your first detection in under a minute.</p>
-        <a class="btn" href="https://agri-intelli-system-production.up.railway.app">Open GreenLens</a>
-      </div>
+<!-- ── Supported crops ── -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Supported Crops</span>
+            <h2 class="section-title">Trained on India's Key Field Crops</h2>
+            <p class="section-sub">GreenLens currently recognises five major crops, and we will keep adding more.</p>
+        </div>
+        <div class="crop-grid">
+            <div class="crop-card"><span aria-hidden="true">🌾</span>Rice</div>
+            <div class="crop-card"><span aria-hidden="true">🌾</span>Wheat</div>
+            <div class="crop-card"><span aria-hidden="true">🌽</span>Maize</div>
+            <div class="crop-card"><span aria-hidden="true">🎋</span>Sugarcane</div>
+            <div class="crop-card"><span aria-hidden="true">🌿</span>Jute</div>
+        </div>
     </div>
-  </section>
+</section>
 
-</main>
+<!-- ── Features ── -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="section-header light">
+            <span class="section-tag accent">Features</span>
+            <h2 class="section-title">Built for the Field and the Office</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card dark">
+                <div class="feature-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/></svg></div>
+                <h3>Smart Detection</h3>
+                <p>Each crop found in the image is outlined and labelled by our custom-trained model.</p>
+            </div>
+            <div class="feature-card dark">
+                <div class="feature-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                <h3>Counts &amp; Confidence</h3>
+                <p>A clear summary of each crop detected, with how many were found and the model's confidence.</p>
+            </div>
+            <div class="feature-card dark">
+                <div class="feature-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <h3>Detection History</h3>
+                <p>Every scan is saved with its original and annotated image, so you can look back anytime.</p>
+            </div>
+            <div class="feature-card dark">
+                <div class="feature-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+                <h3>Mobile App</h3>
+                <p>Android and iOS app made for use in the field, straight from your phone camera.</p>
+            </div>
+            <div class="feature-card dark">
+                <div class="feature-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg></div>
+                <h3>Web Platform</h3>
+                <p>Run detections and manage your history from any browser.</p>
+            </div>
+            <div class="feature-card dark">
+                <div class="feature-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <h3>Synced &amp; Secure</h3>
+                <p>One account for mobile and web, with results stored securely in the cloud.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<footer>
-  <div class="wrap">
-    <span>© 2026 AAI Tech. All rights reserved.</span>
-    <span>aaitech.in</span>
-  </div>
-</footer>
+<!-- ── Technology ── -->
+<section class="section section-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Under the Hood</span>
+            <h2 class="section-title">The Technology</h2>
+        </div>
+        <div class="stack-grid">
+            <div class="stack-card"><h4>AI Model</h4><p>YOLO (Ultralytics)</p><small>Custom-trained on crop image datasets</small></div>
+            <div class="stack-card"><h4>Backend</h4><p>Python &amp; FastAPI</p><small>Runs inference on the server</small></div>
+            <div class="stack-card"><h4>Mobile</h4><p>Flutter</p><small>One codebase for Android and iOS</small></div>
+            <div class="stack-card"><h4>Cloud</h4><p>Google Firebase</p><small>Firestore for accounts and history</small></div>
+        </div>
+    </div>
+</section>
 
+<!-- ── CTA ── -->
+<section class="section cta-section">
+    <div class="container cta-container">
+        <div class="cta-content">
+            <h2>Ready to Try GreenLens?</h2>
+            <p>GreenLens is our first step towards a broader AI assistant for farmers, covering more crops plus climate, soil and weather insights.</p>
+        </div>
+        <div class="cta-actions">
+            
+            <a href="https://agri-intelli-system-production.up.railway.app/register" class="btn btn-primary btn-lg">Create Free Account</a>
+            <a href="https://agri-intelli-system-production.up.railway.app/login" class="btn btn-secondary btn-lg">Login</a>
+            
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="brand-logo small">
+                            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="8" fill="#86AB5E"/>
+                        <path d="M7 21C7 12 13 7 21 6.5c0 9-5.5 14.5-14 14.5z" fill="white"/>
+                        <path d="M7 21c3.5-4.5 7-7.5 10.5-10" stroke="#86AB5E" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    </svg>
+                        </div>
+                        <span>AAI Tech</span>
+                    </div>
+                    <p class="footer-tagline">Empowering agriculture through AI and technology.<br>Makers of GreenLens for web &amp; mobile.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="greenlens.html">GreenLens</a></li>
+                        <li><a href="https://agri-intelli-system-production.up.railway.app/detect">Detect Crops</a></li>
+                        
+                        <li><a href="https://agri-intelli-system-production.up.railway.app/register">Register</a></li>
+                        <li><a href="https://agri-intelli-system-production.up.railway.app/login">Login</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-tech">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AAI Tech. All rights reserved. GreenLens is a product of AAI Tech.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/app.js"></script>
+    
 </body>
 </html>

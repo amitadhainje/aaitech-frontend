@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenLens — AI Crop Recognition | AAI Tech</title>
+  <meta name="description" content="GreenLens by AAI Tech: AI-powered crop recognition from field photos, on mobile and web.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 26C6 13 15 6 27 5c0 13-8 21-21 21z' fill='%235B7E3C'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="AAI Tech home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26C6 13 15 6 27 5c0 13-8 21-21 21z" fill="currentColor" style="color:var(--brand)"/><path d="M6 26C11 19 16 14 22 10" stroke="var(--bg)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      AAI Tech
+    </a>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="greenlens.html" aria-current="page">GreenLens</a></li>
+      <li><a href="index.html#team">Team</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">A product by AAI Tech</div>
+      <h1>GreenLens: <em>see your crops</em> through AI</h1>
+      <p class="lead">GreenLens is an AI-powered crop recognition system. Take a photo in the field, and our custom-trained computer vision model tells you which crops it sees, how many, and how confident it is.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://agri-intelli-system-production.up.railway.app">Try GreenLens</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">How it works</div>
+        <h2>From field photo to insight in seconds</h2>
+      </div>
+      <div class="flow">
+        <div class="card"><h3>Sign in</h3><p>Create a free account on the mobile app or website. One account works on both.</p></div>
+        <div class="card"><h3>Upload a photo</h3><p>Take a picture with your phone camera or upload an image from your gallery or computer.</p></div>
+        <div class="card"><h3>AI detection</h3><p>Our YOLO-based deep learning model finds and labels each crop in the image.</p></div>
+        <div class="card"><h3>Review results</h3><p>See the labelled image with the count and confidence for each crop, saved to your history.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-bg">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Supported crops</div>
+        <h2>Trained on India's key field crops</h2>
+        <p>GreenLens currently recognises five major crops, and we will keep adding more.</p>
+      </div>
+      <div class="crop-grid">
+        <div class="card"><span aria-hidden="true">🌾</span><b>Rice</b></div>
+        <div class="card"><span aria-hidden="true">🌾</span><b>Wheat</b></div>
+        <div class="card"><span aria-hidden="true">🌽</span><b>Maize</b></div>
+        <div class="card"><span aria-hidden="true">🎋</span><b>Sugarcane</b></div>
+        <div class="card"><span aria-hidden="true">🌿</span><b>Jute</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Features</div>
+        <h2>Built for the field and the office</h2>
+      </div>
+      <div class="features">
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/></svg></div>
+          <h3>Smart detection</h3>
+          <p>Each crop found in the image is outlined and labelled by a custom-trained model.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+          <h3>Counts &amp; confidence</h3>
+          <p>A clear summary of each crop detected, with how many were found and the model's confidence.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Detection history</h3>
+          <p>Every scan is saved with its original and annotated image, so you can look back anytime.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+          <h3>Mobile app</h3>
+          <p>Android and iOS app made for use in the field, straight from your phone camera.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg></div>
+          <h3>Web platform</h3>
+          <p>Run detections and manage your history from any browser.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg></div>
+          <h3>Synced &amp; secure</h3>
+          <p>Your account and results are stored in the cloud and stay in sync across mobile and web.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-bg">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Under the hood</div>
+        <h2>The technology</h2>
+      </div>
+      <div class="stack">
+        <div class="card"><h3>AI model</h3><p>YOLO (Ultralytics)</p><small>Custom-trained on crop image datasets</small></div>
+        <div class="card"><h3>Backend</h3><p>Python &amp; FastAPI</p><small>Runs inference on the server</small></div>
+        <div class="card"><h3>Mobile</h3><p>Flutter</p><small>One codebase for Android and iOS</small></div>
+        <div class="card"><h3>Cloud</h3><p>Google Firebase</p><small>Firestore database for accounts and history</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Where we're heading</div>
+        <h2>The start of a smarter farming toolkit</h2>
+        <p>GreenLens is our first step. In line with the AAI Tech vision, we plan to grow it into a broader assistant for farmers, with more crops and insights on climate, soil health and weather patterns, so farmers can make better decisions all season long.</p>
+      </div>
+      <div class="contact">
+        <h2>Ready to try GreenLens?</h2>
+        <p>Create an account and run your first detection in under a minute.</p>
+        <a class="btn" href="https://agri-intelli-system-production.up.railway.app">Open GreenLens</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 AAI Tech. All rights reserved.</span>
+    <span>aaitech.in</span>
+  </div>
+</footer>
+
+</body>
+</html>
